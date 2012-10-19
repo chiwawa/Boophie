@@ -15,7 +15,7 @@ add_executable(	Boophie
 link_directories(/usr/lib)
 target_link_libraries(
 	Boophie
-	boost_system
+	boost_system-mt
 	pthread
-	boost_thread
+	boost_thread-mt
 )
