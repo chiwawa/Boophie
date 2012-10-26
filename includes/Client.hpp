@@ -6,6 +6,8 @@
 # include <boost/asio.hpp>
 # include <boost/enable_shared_from_this.hpp>
 
+# include "Message.hpp"
+
 namespace Boophie {
   namespace Network {
 
@@ -17,11 +19,16 @@ namespace Boophie {
       void				write();
       void				endWrite(const boost::system::error_code&, size_t);
 
+      void				readHeader();
+      void				readBody(const boost::system::error_code&);
+      void				process(const boost::system::error_code&);
+
       boost::asio::ip::tcp::socket&	socket();
 
     private:
       Client(boost::asio::io_service&);
       boost::asio::ip::tcp::socket	_socket;
+      Message				_messageRead;
     };
   }
 }

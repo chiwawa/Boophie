@@ -7,6 +7,7 @@ int		main(int ac, char **av)
   Boophie::Network::Server	boophie(io_service);
 
   boophie.accept();
+  boophie.run();
   io_service.run();
   return (0);
 }

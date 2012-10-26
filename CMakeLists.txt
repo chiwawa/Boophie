@@ -6,9 +6,13 @@ set(CMAKE_EXE_LINKER_FLAGS "-ggdb")
 
 include_directories("includes/")
 
+add_definitions( -DBOOFIE=2 )
+
 add_executable(	Boophie
                 src/Client.cpp
 		src/Server.cpp
+		src/Message.cpp
+		src/BoophieProtocole.cpp
                 main.cpp
 		)
 

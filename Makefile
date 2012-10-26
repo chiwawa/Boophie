@@ -135,6 +135,30 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/BoophieProtocole.o: src/BoophieProtocole.cpp.o
+.PHONY : src/BoophieProtocole.o
+
+# target to build an object file
+src/BoophieProtocole.cpp.o:
+	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/src/BoophieProtocole.cpp.o
+.PHONY : src/BoophieProtocole.cpp.o
+
+src/BoophieProtocole.i: src/BoophieProtocole.cpp.i
+.PHONY : src/BoophieProtocole.i
+
+# target to preprocess a source file
+src/BoophieProtocole.cpp.i:
+	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/src/BoophieProtocole.cpp.i
+.PHONY : src/BoophieProtocole.cpp.i
+
+src/BoophieProtocole.s: src/BoophieProtocole.cpp.s
+.PHONY : src/BoophieProtocole.s
+
+# target to generate assembly for a file
+src/BoophieProtocole.cpp.s:
+	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/src/BoophieProtocole.cpp.s
+.PHONY : src/BoophieProtocole.cpp.s
+
 src/Client.o: src/Client.cpp.o
 .PHONY : src/Client.o
 
@@ -158,6 +182,30 @@ src/Client.s: src/Client.cpp.s
 src/Client.cpp.s:
 	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/src/Client.cpp.s
 .PHONY : src/Client.cpp.s
+
+src/Message.o: src/Message.cpp.o
+.PHONY : src/Message.o
+
+# target to build an object file
+src/Message.cpp.o:
+	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/src/Message.cpp.o
+.PHONY : src/Message.cpp.o
+
+src/Message.i: src/Message.cpp.i
+.PHONY : src/Message.i
+
+# target to preprocess a source file
+src/Message.cpp.i:
+	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/src/Message.cpp.i
+.PHONY : src/Message.cpp.i
+
+src/Message.s: src/Message.cpp.s
+.PHONY : src/Message.s
+
+# target to generate assembly for a file
+src/Message.cpp.s:
+	$(MAKE) -f CMakeFiles/Boophie.dir/build.make CMakeFiles/Boophie.dir/src/Message.cpp.s
+.PHONY : src/Message.cpp.s
 
 src/Server.o: src/Server.cpp.o
 .PHONY : src/Server.o
@@ -195,9 +243,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/BoophieProtocole.o"
+	@echo "... src/BoophieProtocole.i"
+	@echo "... src/BoophieProtocole.s"
 	@echo "... src/Client.o"
 	@echo "... src/Client.i"
 	@echo "... src/Client.s"
+	@echo "... src/Message.o"
+	@echo "... src/Message.i"
+	@echo "... src/Message.s"
 	@echo "... src/Server.o"
 	@echo "... src/Server.i"
 	@echo "... src/Server.s"
